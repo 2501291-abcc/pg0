@@ -1,0 +1,130 @@
+/* 基本の背景とフォント */
+body {
+    background-color: #313338; /* Discordの背景色 */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 全体のカード（画像中央の白い部分に相当） */
+.card {
+    background-color: #ffffff; /* 画像に合わせて白、もしくは #f2f3f5 */
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* タイトル部分 */
+h1 {
+    color: #5865F2; /* Discordのブランドカラー（青紫） */
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* 入力エリアのコンテナ */
+.writingArea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* テキスト入力欄 */
+input[type="text"] {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e3e5e8;
+    background-color: #f2f3f5;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #5865F2;
+}
+
+/* 記録ボタン */
+button {
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4752c4;
+}
+
+/* 掲示板（ログ表示エリア） */
+.BulletinBoard {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* 記録されたアイテムのスタイル例（画像の下段部分） */
+.log-item {
+    background-color: #f2f3f5;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 10px;
+    border-left: 4px solid #5865F2; /* Discordのメッセージ強調風 */
+}
+
+/* 日付などの文字 */
+.log-date {
+    font-size: 12px;
+    color: #80848e;
+    display: block;
+    margin-top: 5px;
+}
+/* ログ1件分の枠 */
+.log-item {
+    background-color: #f2f3f5; /* 薄いグレー */
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #5865f2; /* 左側に青紫のアクセント線 */
+}
+
+/* メッセージ部分 */
+.log-text {
+    margin: 0;
+    color: #313338;
+    font-weight: 500;
+}
+
+/* 日時部分（小さく、薄く） */
+.log-date {
+    font-size: 11px;
+    color: #80848e;
+    display: block;
+    margin-top: 4px;
+}
+
+/* 削除ボタン */
+.delete-btn {
+    background: #e3e5e8;
+    color: #4e5058;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background: #fa777c;
+    color: white;
+}
